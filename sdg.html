@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainable Development Goals</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bungee Spice&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Kumar One&display=swap');
+
+    body{
+        background-color: white;
+        transition: background-color .5s;
+    }
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+    
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+    
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    
+    #main {
+      transition: margin-left .5s;
+      color: black;
+      animation: mymove 5s infinite;
+    }
+
+    @keyframes mymove {
+      from {color: black;}
+      to {color: blue;}
+      from {color: blue;}
+      to{color:green}
+    }
+    
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+
+    #goals img:hover{
+        border: 1px solid black;
+    }
+</style>
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.body.style.backgroundColor = "rgb(190, 191, 187)";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+      document.body.style.backgroundColor = "white";
+    }
+</script>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="main.html">Home</a>
+        <a href="targets.html">SDG 16 Targets</a>
+        <a href="facts.html">Facts & Figures</a>
+        <a href="links.html">Links & Resources</a>
+        <a href="sdg.html">More About United Nations SDGs</a>
+    </div>
+      
+    <div id="main">
+        <span title="Menu Bar" style="font-size:70px;cursor:pointer;display: flex; justify-content: right;" onclick="openNav()">&#9774;</span>
+    </div>
+
+    <h1 style="font-family: Bungee Spice;font-size:100px">The Sustainable Development Agenda</h1>
+    <img src="https://www.un.org/sustainabledevelopment/wp-content/uploads/2018/04/About_page_UNDP-1200x352.png" style="width: 100.1%;">
+    <h1 style="font-family: Kumar One;font-size: 50px;">17 Goals For People, For Planet</h1>
+    <p style="font-family: Rajdhani;font-size:25px;">
+        <a href="https://www.un.org/sustainabledevelopment/sustainable-development-goals/">The Sustainable Development Goals</a> are a universal call to action to end poverty, protect the planet and improve the lives and prospects of everyone, everywhere. The 17 Goals were adopted by all UN Member States in 2015, as part of the 2030 Agenda for Sustainable Development which set out a 15-year plan to achieve the Goals.
+
+Today, <a href="https://unstats.un.org/sdgs/report/2019/">progress</a> is being made in many places, but, overall, action to meet the Goals is not yet advancing at the speed or scale required. 2020 needs to usher in a decade of ambitious action to deliver the Goals by 2030.
+
+
+    </p>
+    <h1 style="font-family: Bungee Spice;font-size:100px">The 17 Goals</h1>
+    <div id="goals">
+        <a href="https://www.un.org/sustainabledevelopment/poverty/">
+            <img src="https://www.unoosa.org/images/ourwork/SDGs/E_SDG_goals_icons-individual-rgb-01.png" width="200px">
+        </a>
+        <a href="https://www.un.org/sustainabledevelopment/hunger/">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Sustainable_Development_Goal_2.png" width="200px">
+        </a>
+        <a href="https://www.un.org/sustainabledevelopment/health/">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Sustainable_Development_Goal_3.png"width="200px">
+        </a>
+        <a href="https://www.un.org/sustainabledevelopment/education">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Sustainable_Development_Goal_4.png"width="200px">
+        </a>
+        <a href="https://www.un.org/sustainabledevelopment/gender-equality">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Sustainable_Development_Goal_5.png"width="200px">
+        </a>
+        <a href="https://www.un.org/sustainabledevelopment/water-and-sanitation/">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sustainable_Development_Goal_6.png"width="200px">
+        </a>
+        <a href="https://www.un.org/sustainabledevelopment/energy">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Sustainable_Development_Goal_7.png"width="200px">
+        </a>
+        <a href="https://www.un.org/sustainabledevelopment/economic-growth">
+            <img src="https://www.un.org/esa/ffd/ffddialogue/images/E_SDG%20goals_icons-individual-rgb-08.png"width="200px">
+        </a>
+        <a href="https://www.un.org/sustainabledevelopment/infrastructure-industrialization">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Sustainable_Development_Goal_9.png"width="200px">
+        </a>
+        <a href="https://www.un.org/sustainabledevelopment/inequality">
+            <img src="https://www.unoosa.org/images/ourwork/SDGs/E_SDG_goals_icons-individual-rgb-10.png"width="200px">
+        </a>
+        <a href="https://www.un.org/sustainabledevelopment/cities">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Sustainable_Development_Goal_11.png"width="200px">
+        </a>
+        <a href="https://www.un.org/sustainabledevelopment/sustainable-consumption-production">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Sustainable_Development_Goal_12.png/1200px-Sustainable_Development_Goal_12.png"width="200px">
+        </a>
+        <a href="https://www.un.org/sustainabledevelopment/climate-change">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Sustainable_Development_Goal_13.png"width="200px">
+        </a>
+        <a href="https://www.un.org/sustainabledevelopment/oceans">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Sustainable_Development_Goal_14.png"width="200px">
+        </a>
+        <a href="https://www.un.org/sustainabledevelopment/biodiversity">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Sustainable_Development_Goal_15.png"width="200px">
+        </a>
+        <a href="https://www.un.org/sustainabledevelopment/peace-justice">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Sustainable_Development_Goal_16.png"width="200px">
+        </a>
+        <a href="https://www.un.org/sustainabledevelopment/globalpartnerships">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Sustainable_Development_Goal_17.png"width="200px">
+        </a>
+        <a href="https://www.un.org/sustainabledevelopment/sustainable-development-goals/">
+            <img src="https://www.un.org/sustainabledevelopment/wp-content/uploads/2019/08/E_SDG_logo_UN_emblem_square_trans_WEB-1024x879.png" width="200px" style="border:1px solid black;padding-top:26px;">
+        </a>
+    </div>
+    <br><br>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/0XTBYMfZyrM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>

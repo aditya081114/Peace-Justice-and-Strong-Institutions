@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal 16:Facts and Figures</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bungee Spice&display=swap');
+
+    body{
+        background-color: cornflowerblue;
+        transition: background-color .5s;
+    }
+    h1{
+        font-family: Bungee Spice;
+        font-size: 100px;
+    }
+    ul{
+        font-family: Rajdhani;
+        font-size:30px;
+    }
+    h2{
+        font-size:40px;
+        font-family: Rajdhani;
+    }
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+    
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+    
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    
+    #main {
+      transition: margin-left .5s;
+      color: black;
+      animation: mymove 5s infinite;
+    }
+
+    @keyframes mymove {
+      from {color: black;}
+      to {color: blue;}
+      from {color: blue;}
+      to{color:green}
+    }
+    
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+</style>
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.body.style.backgroundColor = "rgb(0, 107, 179)";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+      document.body.style.backgroundColor = "cornflowerblue";
+    }
+</script>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="main.html">Home</a>
+        <a href="targets.html">SDG 16 Targets</a>
+        <a href="facts.html">Facts & Figures</a>
+        <a href="links.html">Links & Resources</a>
+        <a href="sdg.html">More About United Nations SDGs</a>
+    </div>
+      
+    <div id="main">
+        <span title="Menu Bar" style="font-size:70px;cursor:pointer;display: flex; justify-content: right;" onclick="openNav()">&#9774;</span>
+    </div>
+    <h1>Facts & Figures</h1>
+    <ul>
+        <li>Among the institutions most affected by corruption are the judiciary and police.</li>
+        <li>Corruption, bribery, theft and tax evasion cost some US $1.26 trillion for developing countries per year; this amount of money could be used to lift those who are living on less than $1.25 a day above $1.25 for at least six years</li>
+        <li>Birth registration has occurred for 73 per cent of children under 5, but only 46per cent of Sub-Saharan Africa have had their births registered.</li>
+        <li>Approximately 28.5 million primary school age who are out of school live in conflict-affected areas.</li>
+        <li>The rule of law and development have a significant interrelation and are mutually reinforcing, making it essential for sustainable development at the national and international level.</li>
+        <li>The proportion of prisoners held in detention without sentencing has remained almost constant in the last decade, at 31per cent of all prisoners.</li>
+    </ul>
+    <h2>Violence Against children</h2>
+    <ul>
+        <li>The number of people fleeing war, persecution and conflict exceeded 70 million in 2018, the highest level recorded by the UN refugee agency (UNHCR) in almost 70 years.</li>
+        <li>In 2019, the United Nations tracked 357 killings and 30 enforced disappearances of human rights defenders, journalists and trade unionists in 47 countries.</li>
+        <li>Violence against children affects more than 1 billion children around the world and costs societies up to US$ 7 trillion a year.</li>
+        <li>50 per cent of the world’s children experience violence every year.</li>
+        <li>Every 7 minutes, somewhere in the world, a child is killed by violence</li>
+        <li>1 in 10 children is sexually abused before the age of 18.</li>
+        <li>9 in 10 children live in countries where corporal punishment is not fully prohibited, leaving 732 million children without legal protection.</li>
+        <li>1 in 3 internet users worldwide is a child and 800 million of them use social media. Any child can become a victim of online violence.</li>
+        <li>Child online sexual abuse reports to NCMEC has grown from 1 million in 2014 to 45 million in 2018.</li>
+        <li>246 million children worldwide affected by school-related violence each year.</li>
+        <li>1 in 3 students has been bullied by their peers at school in the last month, and at least 1 in 10 children have experienced cyberbullying.</li>
+    </ul>
+</body>
+</html>

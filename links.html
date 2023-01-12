@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links & Resources</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Kumar One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bungee Spice&display=swap');
+
+    body {
+      transition: background-color .5s;
+      background-color: black;
+    }
+    
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+    
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+    
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    
+    #main {
+      transition: margin-left .5s;
+      color: black;
+      animation: mymove 5s infinite;
+    }
+
+    @keyframes mymove {
+      from {color: black;}
+      to {color: blue;}
+      from {color: blue;}
+      to{color:green}
+    }
+    
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+
+    #brand{
+        border-left:10px solid white;
+        padding-left: 20px;
+    }
+    button {
+      border: none;
+      color: black;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: black;
+      color: white;
+    }
+    p{
+      font-size: 25px;
+    }
+</style>
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.body.style.backgroundColor = "black";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+      document.body.style.backgroundColor = "black";
+    }
+</script>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="main.html">Home</a>
+        <a href="targets.html">SDG 16 Targets</a>
+        <a href="facts.html">Facts & Figures</a>
+        <a href="links.html">Links & Resources</a>
+        <a href="sdg.html">More About United Nations SDGs</a>
+    </div>
+      
+    <div id="main">
+        <span title="Menu Bar" style="font-size:70px;cursor:pointer;display: flex; justify-content: right;" onclick="openNav()">&#9774;</span>
+    </div>
+    <p style="font-family: Kumar One;font-size:35px;color: #f1f1f1;">
+        Here you can find media content and graphical assets for communicating the Goals. You can find the official SDG brand guidelines from the United Nations here brand guidelines.</p>
+    <h1 style="font-family: Bungee Spice;font-size:100px;">Links</h1>
+    <ul style="font-family: Rajdhani;font-size:40px;color: #f1f1f1;">
+        <li><a href="http://en.unesco.org/">United Nations Educational, Scientific and Cultural Organization</a></li>
+        <li><a href="https://www.ohchr.org/EN/pages/home.aspx">Office of the High Commissioner for Human Rights</a></li>
+        <li><a href="https://www.un.org/en/documents/udhr/">Universal Declaration of Human Rights</a></li>
+        <li><a href="https://www.un.org/undpa/en">UN Department of Political Affairs</a></li>
+        <li><a href="https://www.un.org/sustainabledevelopment/peace-justice/">UN Development Programme</a></li>
+        <li><a href="http://www.unodc.org/">United Nations Office on Drugs and Crime</a></li>
+        <li><a href="http://www.unicef.org/endviolence/">UNICEF #EndViolence</a></li>
+        <li><a href="http://www.end-violence.org/safetolearn">#SafetoLearn</a></li>
+        <li><a href="https://www.un.org/en/peacekeeping/">United Nations Peacekeeping</a></li>
+        <li><a href="https://www.un.org/sc/ctc/">UN Counter Terrorism Committee</a></li>
+        <li><a href="https://www.endviolenceagainstchildren.org/"> High Time to End Violence against Children </a></li>
+        <li><a href="http://un-act.org/">UN action for cooperation against trafficking in persons (UN-ACT)</a></li>
+        <li><a href="https://violenceagainstchildren.un.org/">UN office of the special representative of the secretary-general on violence against children</a></li>
+        <li><a href="http://www.mineaction.org/unmas">UN Mine Action service</a></li>
+        <li><a href="http://www.end-violence.org/">#The Global Partnership to End Violence Against Children</a></li>
+    </ul>
+
+    <h1 style="font-family: Bungee Spice;font-size:100px;">Resources</h1>
+    <div id="brand" style="color: #f1f1f1;">
+        <h2 style="font-family: Kumar One;font-size:50px;">Brand Assets</h2>
+        <img src="https://globalgoalscms.co.uk/wp-content/uploads/2021/11/4a65871b85e9ab7423192498e7ce4f0b759b4448_grid.jpg">
+        <h1>ICON GRID</h1>
+        <p>Download the full grid with all icons, in png and vector formats.</p>
+        <a href="https://globalgoalscms.co.uk/wp-content/uploads/2021/10/the-global-goals-grid.zip">
+          <button>Download ZIP</button>
+        </a>
+        <br><br>
+        <img src="https://globalgoalscms.co.uk/wp-content/uploads/2021/10/4d24623e-4952-4906-977f-6e0f3a81513b_imgpsh_mobile_save-1.jpg">
+        <h1>MY ACTIVIST DIARY TOOLKIT</h1>
+        <p>See how you can create your own activist diary…</p>
+        <a href="https://globalgoalscms.co.uk/wp-content/uploads/2021/10/Activist-Diary-Toolkit-v3.pdf">
+          <button>Download PDF</button>
+        </a>
+        <br><br>
+        <img src="https://globalgoalscms.co.uk/wp-content/uploads/2021/10/5027407d85b25b523d5b988b5a79ce02a5e82bbf_grid-languages.png">
+        <h1>ICON GRID – VARIOUS LANGUAGES</h1>
+        <p>Download the Global Goals grid in 20 different languages.</p>
+        <a href="https://globalgoalscms.co.uk/wp-content/uploads/2021/10/the-global-goals-grid-various-languages.zip">
+          <button>Download ZIP</button>
+        </a>
+        <br><br>
+        <img src="https://globalgoalscms.co.uk/wp-content/uploads/2021/10/dc950cf861db1746652b4df878d208389d9a4a39_the-global-goals-media-cards.png">
+        <h1>TARGET MEDIA CARDS</h1>
+        <p>Let a target stand out. Perfect for sharing in social media. Includes all of the 169 targets.</p>
+        <a href="https://globalgoalscms.co.uk/wp-content/uploads/2021/10/global-goals-media-cards.zip">
+          <button>Download ZIP</button>
+        </a>
+        <br><br>
+        <img src="https://globalgoalscms.co.uk/wp-content/uploads/2021/10/16-goal-resources.png">
+        <h1>ICONS FOR GOAL 16</h1>
+        <p>Download the primary icon and target icons for Goal 16 in png and vector formats.</p>
+        <a href="https://globalgoalscms.co.uk/wp-content/uploads/2021/10/goal-16.zip">
+          <button>Download ZIP</button>
+        </a>
+
+    </div>
+</body>
+</html>
